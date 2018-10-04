@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    padding: 12px 12px 8px 12px;
+    padding: 8px 12px 8px 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
     font-size: 20px;
     text-decoration: none;
     list-style: none;
-    margin-right: -40px;
+    margin: 10px -40px 10px 0;
 }
 
 .menu li {
@@ -50,10 +50,10 @@ header {
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 3px;
     margin-left: 50px;
-    width: 215px;
-    height: 46px;
+    width: 192px;
+    height: 38px;
     background-repeat: no-repeat;
     background-image: url("../img/logo.png");
     background-size: contain;
@@ -66,8 +66,14 @@ header {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 1010px) {
+    .menu li a {
+        padding: 12px 10px;
+    }
+}
+
 .icon:hover {
-    opacity: 0.7;
+    opacity: 0.55;
 }
 
 .bag-icon {
@@ -179,7 +185,6 @@ header {
     cursor: pointer;
 }
 
-
 .section-1 {
     margin-top: 40px;
     background-image: url("../img/bg_header.png");
@@ -239,7 +244,7 @@ header {
 }
 
 .selected-words {
-    color: #02ffcc;
+    color: #00a4f1;
     text-shadow: 4px 4px 4px #B3B5B4;
 }
 
