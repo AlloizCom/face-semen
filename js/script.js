@@ -46,9 +46,12 @@ $(document).ready(function(){
             $(this).css("transform", "translate(" + positionX[index] + "px, " + newPosY + "px)");
         });
     }, refreshRate);
-    $(".slider").slick({
+    $(".slides").slick({
         dots: true,
-        centerPadding :"50px"
+        centerPadding :"50px",
+        arrows: true,
+        prevArrow: $(".slider-prev-btn"),
+        nextArrow: $(".slider-next-btn")
     });
     $('.video').parent().click(function () {
         if($(this).children(".video").get(0).paused){
