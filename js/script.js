@@ -16,22 +16,20 @@ $(document).ready(function(){
     }
     $(".section-1-text").cycle("fade");
     const refreshRate = 1000 / 60;
-    var maxXPosition = $(".section-2").css("width");
+    var maxXPosition = $(".section-2").width()*1.3;
     var positionX = [];
     var positionY = [];
-    var amplitude = [];
-    var frequency = [];
-    var startXPosition = $(".facial-sheet-with-circles-img").position().left + $(".facial-sheet-with-circles-img").width() * 0.6;
-    var startYPosition = $(".facial-sheet-with-circles-img").position().top + $(".facial-sheet-with-circles-img").height() * 0.4;
+    var fi = [];
+    var startYPosition = $(".bubbles").position().top + $(".bubbles").height() * 0.5;
     var speedX = 0.5;
-    for (var i = 0; i < 9; i++) {
-        positionX[i] = startXPosition + i * $(".section-2").width()/12;
-        positionY[i] = startYPosition + Math.random() * 0.7 * ($(".facial-sheet-with-circles-img").height()/2);
-        amplitude[i] = Math.random()*8 + 5;
-        frequency[i] = Math.random()*0.03 + 0.01;
+    var A = $(".bubbles").height() * 0.2;
+    var W = (2 * 3.14) / ($(".section-2").width() * 0.98);
+    for (var i = 0; i < 8; i++) {
+        positionX[i] = 0 + i * maxXPosition/8;
+        positionY[i] = startYPosition;
+        fi[i] = Math.random()*1000;
         console.log(positionX[i]);
     }
-    maxXPosition = maxXPosition.substr(0, maxXPosition.length - 2);
     $(".bubble").css("left", 0);
     window.setInterval(() => {
         var newPosX, newPosY;
@@ -40,11 +38,11 @@ $(document).ready(function(){
                 $(this).show();
             }
             newPosX = positionX[index] + speedX;
-            if (newPosX > maxXPosition) {
-                newPosX = startXPosition;
+            if (newPosX > maxXPosition * 0.95) {
+                newPosX = -$(this).width();
             }
             positionX[index] = newPosX;
-            newPosY = positionY[index] + amplitude[index] * Math.sin(frequency[index] * positionX[index]);
+            newPosY = startYPosition + (A * Math.sin(W * positionX[index]) - $(this).width()/2) + 15 * Math.sin(0.02 * positionX[index] + fi[index]);
             $(this).css("transform", "translate(" + positionX[index] + "px, " + newPosY + "px)");
         });
     }, refreshRate);
