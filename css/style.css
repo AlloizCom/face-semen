@@ -459,23 +459,20 @@ header {
 .first_block {
     display: flex;
     margin-top: 10vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    justify-content: center;
 }
 
 .second_block {
     margin-top: 10vw;
     display: flex;
     flex-direction: row-reverse;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    justify-content: center;
 }
 
 .third_block {
     margin-top: 10vw;
     display: flex;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    justify-content: center;
 }
 
 .first_block span{
@@ -628,6 +625,7 @@ video {
 }
 
 .info {
+
     outline: none;
     cursor: pointer;
     display: flex !important;
@@ -635,20 +633,18 @@ video {
 }
 
 .info span {
-    background: #fdfdfd;;
+    border-image: url("../img/borderim.png");
     padding-top: 1.3vw;
     padding-bottom: 1.7vw;
     padding-right: 4vw;
     padding-left: 7vw;
     margin-left: -5vw;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .info img {
     height: 7.5vw;
     z-index: 2;
-    height: 7.5vw !important;
 }
 
 hr {
@@ -675,4 +671,8 @@ hr {
 
 .circle img:first-child{
     z-index: 2;
+}
+.info span img{
+    width: 5px;
+    height: 5px;
 }
