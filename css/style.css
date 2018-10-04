@@ -505,6 +505,10 @@ header {
     cursor: pointer;
 }
 
+.slider-next-btn:hover, .slider-prev-btn:hover {
+    color: #6d6d6d;
+}
+
 .discover-btn:hover {
     color: #fafafa;
     background-color: #15e2a0;
