@@ -401,12 +401,6 @@ header {
     justify-content: center;
 }
 
-.facial-sheet-on-board-img {
-    width: 25vw;
-    height: 25vw;
-    background-color: red;
-}
-
 .slider {
     display: flex;
     width: 30vw;
@@ -516,6 +510,82 @@ header {
 .discover-btn:hover {
     color: #fafafa;
     background-color: #15e2a0;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    background-color: #dbffe0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* transform: rotate3d(0, 1, 0, 20deg) rotate3d(1, 0, 0, 05deg) rotate3d(0, 0, 1, 20deg); */
+}
+
+.facial-sheet-on-board-img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.circle-element {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-size: 56%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+}
+
+.c1 {
+    position: relative;
+    top: -10%;
+    width: 40px;
+    height: 120px;
+}
+
+.circle-element-1 {
+    background-image: url("../img/circle_img_1.png");
+}
+
+.circle-element-2 {
+    background-image: url("../img/circle_img_2.png");
+}
+
+.circle-element-3 {
+    background-image: url("../img/circle_img_3.png");
+}
+
+.circle-element-4 {
+    background-image: url("../img/circle_img_4.png");
+}
+
+.circle-element-5 {
+    background-image: url("../img/circle_img_5.png");
+}
+
+.fuck {
+    position: relative;
+    animation: more 2s;
+}
+
+@keyframes rot-1 {
+    from {
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: -150px 200px;
+    }
+}
+
+@keyframes more {
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .first_block {
