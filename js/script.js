@@ -3,7 +3,6 @@ $(document).ready(function(){
         $(".dropdown-content").fadeToggle();
     });
     window.onclick = function(event) {
-        console.log(event.target);
         if (!(event.target.matches('.dropdown-btn') 
         || event.target.matches(".heart-icon") 
         || event.target.matches(".dropdown-content")
@@ -28,7 +27,6 @@ $(document).ready(function(){
         positionX[i] = 0 + i * maxXPosition/8;
         positionY[i] = startYPosition;
         fi[i] = Math.random()*1000;
-        console.log(positionX[i]);
     }
     $(".bubble").css("left", 0);
     window.setInterval(() => {
@@ -46,6 +44,22 @@ $(document).ready(function(){
             $(this).css("transform", "translate(" + positionX[index] + "px, " + newPosY + "px)");
         });
     }, refreshRate);
+    var board_words = ["innovative", "effective", "comfortable", "worthy", "fun", "", "", "", ""];
+    var iteration = 0;
+    $(".board-text").fadeOut(400, function(){
+        $(this).html(board_words[iteration]);
+        $(this).fadeIn(400);
+    })
+    window.setInterval(() =>{
+        $(".board-text").fadeOut(400, function(){
+            $(this).html(board_words[iteration]);
+            $(this).fadeIn(400);
+        })
+        iteration++;
+        if (iteration == board_words.length) {
+            iteration = 0;
+        }
+    }, 1666.66666);
     $(".slides").slick({
         dots: true,
         centerPadding :"50px",
@@ -63,4 +77,19 @@ $(document).ready(function(){
         }
     });
     $('.single-item').slick();
+    
+    $.each($(".bubbles-right"), function(){
+       var bubblecount = ($(this).width()/100)*5;
+       for(var i = 0; i <= bubblecount; i++) {
+          var size = ((Math.random()*40 + 40)/4);
+          $(this).append('<span class="particle-r" style="top:' + (Math.random()*30 + 65) + '%; left:' + (Math.random()*50 + 20) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+       }
+    });
+    $.each($(".bubbles-left"), function(){
+       var bubblecount = ($(this).width()/100)*5;
+       for(var i = 0; i <= bubblecount; i++) {
+          var size = ((Math.random()*40 + 40)/4);
+          $(this).append('<span class="particle-l" style="top:' + (Math.random()*30 + 65) + '%; left:' + (Math.random()*50 + 20) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+       }
+    });
 });
