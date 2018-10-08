@@ -13,7 +13,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    border-bottom: 5px solid #f1fff1;
+    border-bottom: 5px solid #dcffe1;
     background-color: #ffffff;
     z-index: 100;
 }
@@ -222,25 +222,25 @@ header {
     background-image: url("../img/facial_sheet.png");
     position: absolute;
     transform: rotate(-10deg);
-    right: 25vw;
-    top: 15vw;
+    right: 15vw;
+    top: 10vw;
     background-size: cover;
-    width: 20vw;
-    height: 26vw;
+    width: 25vw;
+    height: 33vw;
     animation: float 6s ease-in-out infinite;
 }
 
 @media screen and (min-width: 1600px) {
     .section-1 {
-        height: 900px;
+        height: 720px;
         background-position-y: bottom;
     }
 }
 
 @media screen and (max-width: 1600px) {
     .section-1 {
-        background-position-y: top;
-        height: 60vw;
+        background-position-y: bottom;
+        height: 45vw;
     }
 }
 
@@ -261,9 +261,9 @@ header {
     font-family: 'Calibri';
     color: #a09e9e;
     font-weight: bold;
-    font-size: 36px;
-    top: 20vw;
-    left: 10vw;
+    font-size: 45px;
+    top: 18vw;
+    left: 15vw;
     width: 500px;
 }
 
