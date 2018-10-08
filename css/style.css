@@ -280,7 +280,7 @@ header {
 .section-2 {
     background: url("../img/section_3_bg_top.png") left bottom no-repeat;
     background-size: contain;
-    padding: 160px 0 320px 0;
+    padding: 140px 0 320px 0;
     background-color: #ffffff;
     width: 100%;
     max-width: 100vw;
@@ -526,11 +526,6 @@ header {
 
 .slider-next-btn:hover, .slider-prev-btn:hover {
     color: #6d6d6d;
-}
-
-.discover-btn:hover {
-    color: #fafafa;
-    background-color: #15e2a0;
 }
 
 .board {
