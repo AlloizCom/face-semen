@@ -535,7 +535,7 @@ header {
 
 .board {
     width: 500px;
-    height: 500px;
+    height: 510px;
     background-image: linear-gradient(#dbffe0, #afe4d36e);
     background-color: #dbffe0;
     border-radius: 15px;
@@ -553,7 +553,7 @@ header {
     font-size: 36px;
     position: absolute;
     color: #535353;
-    transform: translate(0, -370px);
+    transform: translate(0, -470px);
 }
 
 .bubbles-right .particle-r {
@@ -561,7 +561,7 @@ header {
     position: absolute;
     background-color:rgba(255, 255, 255, 0.507);
     animation: bubbles-right 3s ease-in infinite;
-    border-radius:100%;
+    border-radius: 100%;
 }
 
 .bubbles-left .particle-l {
@@ -569,7 +569,15 @@ header {
     position: absolute;
     background-color:rgba(255, 255, 255, 0.507);
     animation: bubbles-left 3s ease-in infinite;
-    border-radius:100%;
+    border-radius: 100%;
+}
+
+.board-bubbles-left .particle {
+    opacity:0;
+    position: absolute;
+    background-color:rgba(35, 204, 255, 0.192);
+    animation: bubbles-right 3s ease-in infinite;
+    border-radius: 100%;
 }
 
 @keyframes bubbles-right {
@@ -605,10 +613,10 @@ header {
     background-repeat: no-repeat;
     background-position-x: -3px;
     background-size: 104%;
-    width: 140px;
-    height: 180px;
+    width: 178px;
+    height: 225px;
     z-index: 10;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     -webkit-box-shadow: 0px 50px 99px -15px rgba(0,0,0,0.24);
     -moz-box-shadow: 0px 50px 99px -15px rgba(0,0,0,0.24);
     box-shadow: 0px 50px 99px -15px rgba(0,0,0,0.24);
@@ -616,8 +624,8 @@ header {
 
 .circle-element {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #ffffff;
     background-size: 56%;
@@ -635,7 +643,7 @@ header {
     flex-direction: column-reverse;
     animation: 15s rotate-1 ease-in-out infinite;
     width: 40px;
-    height: 300px;
+    height: 380px;
     z-index: 1;
 }
 
@@ -645,7 +653,7 @@ header {
     flex-direction: column-reverse;
     animation: 15s rotate-2 ease-in-out infinite;
     width: 40px;
-    height: 300px;
+    height: 380px;
     z-index: 2;
 }
 
@@ -655,7 +663,7 @@ header {
     flex-direction: column-reverse;
     animation: 15s rotate-3 ease-in-out infinite;
     width: 40px;
-    height: 300px;
+    height: 380px;
     z-index: 3;
 }
 
@@ -666,7 +674,7 @@ header {
     animation: 15s rotate-4 ease-in-out infinite;
     animation-fill-mode: none;
     width: 40px;
-    height: 300px;
+    height: 380px;
     z-index: 4;
 }
 
@@ -676,17 +684,17 @@ header {
     flex-direction: column-reverse;
     animation: 15s rotate-5 ease-in-out infinite;
     width: 40px;
-    height: 300px;
+    height: 380px;
     z-index: 5;
 }
 
 .elements {
     position: absolute;
     display: flex;
-    width: 260px;
+    width: 320px;
     background-color: #e9fef0ea;
-    height: 260px;
-    transform: translate(40px, -40px);
+    height: 320px;
+    transform: translate(40px, -70px);
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -729,123 +737,123 @@ header {
     10% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     10.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     11% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     20% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     20.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     21% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     30% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     30.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     31% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     40% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     40.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     41% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     50% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     50.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     51% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     60% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     60.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     61% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     70% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     70.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     71% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     80% {
         opacity: 1; 
         border: 30px solid rgba(255, 255, 255, 0.0);
-        transform: translate(40px, -10px);
+        transform: translate(40px, -40px);
     }
     80.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     81% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     90% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
         opacity: 1;
     }
     90.5% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     91% {
         border: 0px solid rgba(255, 255, 255, 1);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
     }
     100% {
         border: 0px solid rgba(255, 255, 255, 0);
-        transform: translate(40px, -40px);
+        transform: translate(40px, -70px);
         opacity: 0;
     }
 }
@@ -963,6 +971,7 @@ header {
         transform: rotate(60deg);
     }
 }
+
 .first_block {
     display: flex;
     margin-top: 10vw;
