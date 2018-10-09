@@ -568,7 +568,7 @@ header {
     border-radius: 100%;
 }
 
-.board-bubbles-left .particle {
+.board-bubbles-left .particle-ll, .board-bubbles-left .particle-rr {
     opacity:0;
     position: absolute;
     background-color:rgba(35, 204, 255, 0.192);
