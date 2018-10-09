@@ -37,10 +37,12 @@ $(document).ready(function(){
             }
             newPosX = positionX[index] + speedX;
             if (newPosX > maxXPosition * 0.95) {
-                newPosX = -$(this).width();
+                newPosX = -0.5 * ($(".big_bubble").width() + $(".small_bubble").width());
+                newPosY = startYPosition;
+            } else {
+                newPosY = startYPosition + (A * Math.sin(W * positionX[index]) - $(this).width()/2) + 15 * Math.sin(0.02 * positionX[index] + fi[index]);
             }
             positionX[index] = newPosX;
-            newPosY = startYPosition + (A * Math.sin(W * positionX[index]) - $(this).width()/2) + 15 * Math.sin(0.02 * positionX[index] + fi[index]);
             $(this).css("transform", "translate(" + positionX[index] + "px, " + newPosY + "px)");
         });
     }, refreshRate);
@@ -76,7 +78,15 @@ $(document).ready(function(){
             $(this).children(".playpause").fadeIn();
         }
     });
-    $('.single-item').slick();
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateIn: 'flipInX'
+    });
     
     $.each($(".bubbles-right"), function(){
        var bubblecount = ($(this).width()/100)*5;
@@ -92,4 +102,18 @@ $(document).ready(function(){
           $(this).append('<span class="particle-l" style="top:' + (Math.random()*30 + 65) + '%; left:' + (Math.random()*50 + 20) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
        }
     });
+    $.each($(".board-bubbles-right"), function(){
+        var bubblecount = ($(this).width()/100)/2;
+        for(var i = 0; i <= bubblecount; i++) {
+           var size = ((Math.random()*40 + 40)/2);
+           $(this).append('<span class="particle-ll" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*50 - 50) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        }
+     });
+     $.each($(".board-bubbles-left"), function(){
+         var bubblecount = ($(this).width()/100)/2;
+         for(var i = 0; i <= bubblecount; i++) {
+            var size = ((Math.random()*40 + 40)/2);
+            $(this).append('<span class="particle-rr" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 + 100) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+         }
+      });
 });
