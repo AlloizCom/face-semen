@@ -78,7 +78,15 @@ $(document).ready(function(){
             $(this).children(".playpause").fadeIn();
         }
     });
-    $('.single-item').slick();
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateIn: 'flipInX'
+    });
     
     $.each($(".bubbles-right"), function(){
        var bubblecount = ($(this).width()/100)*5;
