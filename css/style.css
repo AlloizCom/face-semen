@@ -1086,7 +1086,7 @@ header {
 }
 
 .content_block2 ul {
-    padding-left: 5vw;
+    padding-left: 6vw;
     list-style: none;
 }
 
@@ -1400,13 +1400,6 @@ hr {
 
 }
 
-<<<<<<< HEAD
-.navigation_footer{
-    padding-right: 8vw;
-}
-
-=======
->>>>>>> 14cb1b77e32f88fdb3178966d6f435e2f18c7f85
 .footer-navigation li a:hover {
     color: #0898d3;
 }
