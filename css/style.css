@@ -142,7 +142,7 @@ header {
 
 .dropdown-content {
     display: none;
-    margin-top: 52px;
+    margin-top: 12px;
     right: 0;
     position: absolute;
     width: 295px;
@@ -1390,10 +1390,6 @@ hr {
     align-items: center;
     width: 100%;
 
-}
-
-.navigation{
-    padding-right: 8vw;
 }
 
 .footer-navigation li a:hover {
