@@ -471,31 +471,43 @@ header {
 }
 
 .slide-img {
-    width: 80px;
-    height: 40px;
-    margin: 25px 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .slide1-img {
     background-image: url("../img/slide1_image.png");
+    width: 150px;
+    height: 48px;
+    margin: 21px 0;
 }
 
 .slide2-img {
     background-image: url("../img/slide2_image.png");
+    width: 150px;
+    height: 50px;
+    margin: 20px 0;
 }
 
 .slide3-img {
     background-image: url("../img/slide3_image.png");
+    width: 170px;
+    height: 50px;
+    margin: 20px 0;
 }
 
 .slide4-img {
     background-image: url("../img/slide4_image.png");
+    width: 150px;
+    height: 40px;
+    margin: 25px 0;
 }
 
 .slide5-img {
     background-image: url("../img/slide5_image.png");
+    width: 150px;
+    height: 40px;
+    margin: 25px 0;
 }
 
 .discover-btn {
