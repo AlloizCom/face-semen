@@ -142,7 +142,7 @@ header {
 
 .dropdown-content {
     display: none;
-    margin-top: 52px;
+    margin-top: 12px;
     right: 0;
     position: absolute;
     width: 295px;
@@ -568,7 +568,7 @@ header {
     border-radius: 100%;
 }
 
-.board-bubbles-left .particle {
+.board-bubbles-left .particle-ll, .board-bubbles-left .particle-rr {
     opacity:0;
     position: absolute;
     background-color:rgba(35, 204, 255, 0.192);
@@ -1400,10 +1400,13 @@ hr {
 
 }
 
+<<<<<<< HEAD
 .navigation_footer{
     padding-right: 8vw;
 }
 
+=======
+>>>>>>> 14cb1b77e32f88fdb3178966d6f435e2f18c7f85
 .footer-navigation li a:hover {
     color: #0898d3;
 }
