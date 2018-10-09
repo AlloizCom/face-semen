@@ -604,7 +604,7 @@ header {
     }
  }
 
-.facial-sheet-on-board-img {
+.facial-sheet-on-fimg {
     background-image: url("../img/facial_sheet.png");
     background-repeat: no-repeat;
     background-position-x: -3px;
@@ -1291,7 +1291,7 @@ hr {
 }
 
 .main_block hr {
-    width: 15vw;
+    width: 185px;
     margin-left: 6vw !important;
     background: rgba(8, 152, 211, 0.17);
     height: 1px !important;
