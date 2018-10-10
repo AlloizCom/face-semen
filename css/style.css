@@ -429,7 +429,7 @@ header {
 
 .slider {
     display: flex;
-    width: 555px;
+    width: 570px;
     height: 330px;
     align-items: center;
 }
@@ -441,6 +441,7 @@ header {
 
 .slide {
     outline: none;
+    margin: 0 5px;
 }
 
 .slide-header {
