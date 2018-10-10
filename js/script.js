@@ -103,10 +103,11 @@ $(document).ready(function(){
        }
     });
     $.each($(".board-bubbles-right"), function(){
-        var bubblecount = ($(this).width()/100)/2;
+        // var bubblecount = ($(this).width()/100)/2;
+        var bubblecount = 5;
         for(var i = 0; i <= bubblecount; i++) {
            var size = ((Math.random()*40 + 40)/2);
-           $(this).append('<span class="particle-ll" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*50 - 50) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+           $(this).append('<span class="particle-ll" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 - 40) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
         }
      });
      $.each($(".board-bubbles-left"), function(){
