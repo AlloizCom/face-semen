@@ -279,7 +279,7 @@ header {
 .selected-words {
     /* color: #02ffcc; */
     color: #4d6d7c;
-    text-shadow: 4px 4px 4px #B3B5B4;
+    text-shadow: 4px 4px 4px rgb(236, 236, 236);
 }
 
 .section-2 {
