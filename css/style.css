@@ -160,6 +160,7 @@ header {
 .dropdown-content-share-it {
     background-color: #dff0f8;
     padding: 20px 20px 30px 20px;
+    font-size: 15px;
 }
 
 .share-it-icons {
@@ -185,6 +186,7 @@ header {
 
 .dropdown-content-subscribe p {
     text-align: center;
+    font-size: 14px;
 }
 
 .dropdown-content-subscribe input {
