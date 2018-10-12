@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Calibri; 
-    src: url('../css/fonts/Calibri.ttf');
+    font-family: Open Sans; 
+    src: url('../css/fonts/Open Sans.ttf');
 }
 
 body {
     height: 1000px;
     margin: 0;
-    font-family: 'Calibri';
+    font-family: 'Open Sans';
     overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 .menu {
-    font-family: 'Calibri';
+    font-family: 'Open Sans';
     font-size: 20px;
     text-decoration: none;
     list-style: none;
@@ -216,9 +216,6 @@ header {
 
 .section-1 {
     margin-top: 40px;
-    background-image: url("../img/bg_header.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
     width: 100%;
     z-index: 2;
 }
@@ -227,7 +224,7 @@ header {
     background-image: url("../img/facial_sheet.png");
     position: absolute;
     transform: rotate(-10deg);
-    right: 15vw;
+    left: 38.5vw;
     top: 10vw;
     background-size: cover;
     width: 25vw;
@@ -267,13 +264,16 @@ header {
 
 .section-1-text {
     position: absolute;
-    font-family: 'Calibri';
-    color: #a09e9e;
+    font-family: 'Open Sans';
+    color: #000000;
     font-weight: bold;
     font-size: 45px;
-    top: 18vw;
-    left: 15vw;
-    width: 500px;
+    top: 24vw;
+}
+
+.section-1-text div {
+    text-align: center;
+    width: 100vw;
 }
 
 .selected-words {
@@ -357,7 +357,7 @@ header {
 
 .section-2-text {
     width: 750px;
-    font-family: 'Calibri';
+    font-family: 'Open Sans';
 }
 
 .section-2-text h2 {
@@ -422,7 +422,7 @@ header {
 .section-3 h2 {
     margin-top: 70px;
     color: #535353;
-    font-family: 'Calibri';
+    font-family: 'Open Sans';
     font-size: 34px;
 }
 
