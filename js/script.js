@@ -78,14 +78,23 @@ $(document).ready(function(){
             $(this).children(".playpause").fadeIn();
         }
     });
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        dots: true,
-        items: 1,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateIn: 'flipInX'
+    $(".owl-carousel").slick({
+        // loop: true,
+        // dots: true,
+        // items: 3,
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        // autoplayHoverPause: true,
+        // autoplayHoverPause: true,
+        // animateOut: 'slideOutUp',
+        // animateIn: 'slideInUp',
+        // transitionStyle : "fade"
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        vertical: true,
+        autoplay:true,
+        verticalSwiping: true,
     });
     
     $.each($(".bubbles-right"), function(){

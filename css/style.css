@@ -1046,11 +1046,29 @@ header {
 
 }
 
+.brightum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    font-size: 1.5vw;
+}
+
+.brightum hr{
+    width: 100%;
+    height: 3px;
+    background: #0898d3;
+    margin: 0;
+}
+
 .main_block {
     margin-top: 5vw;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .main_block h1{
@@ -1127,7 +1145,8 @@ header {
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: left;
-    font-size: 1.1vw;
+    font-size: .95vw;
+
 }
 
 .section_content img {
@@ -1137,19 +1156,18 @@ header {
 
 .content_block {
     width: 45vw;
-    padding-right: 10vw;
+    padding-right: 14vw;
 }
 
 .content_block p {
     font-size: 1.5vw;
     padding-left: 6vw;
-    padding-right: 7vw;
     color: rgb(83, 83, 83);
 }
 
 .content_block2 {
     width: 45vw;
-    padding-left: 10vw;
+    padding-left: 14vw;
     font-size: 1.5vw;
 }
 
@@ -1203,6 +1221,7 @@ video {
     padding-top: 0vw;
     padding-left: 0vw;
     padding-right: 0vw;
+    margin-right: 15vw;
 }
 
 .single-item button {
