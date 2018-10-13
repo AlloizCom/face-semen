@@ -374,7 +374,7 @@ header {
 }
 
 .section-2 .section-separator {
-    width: 163px;
+    width: 155px;
 }
 
 .section-header {
@@ -385,7 +385,7 @@ header {
 }
 
 .section-abstract {
-    font-size: 15px;
+    font-size: 16px;
     color: #505050;
 }
 
@@ -437,7 +437,7 @@ header {
 }
 
 .section-3 .section-separator {
-    width: 502px;
+    width: 466px;
 }
 
 .section-3-text > p {
@@ -1100,20 +1100,17 @@ header {
 
 }
 
-.brightum{
+.section-4-text {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70vw;
+    width: 740px;
     font-size: 1.5vw;
 }
 
-.brightum hr{
-    width: 100%;
-    height: 3px;
-    background: #0898d3;
-    margin: 0;
+.section-4-text .section-separator {
+    width: 320px;
 }
 
 .main_block {
@@ -1137,7 +1134,7 @@ header {
 
 }
 
-.section4 li {
+.section-4 li {
     display: flex;
     /* color: #609c7c; */
     /* content: "\2713\0020"; */
@@ -1308,8 +1305,8 @@ video {
 
 }
 
-.section4{
-    padding-top: 15vw;
+.section-4 {
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
