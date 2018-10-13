@@ -129,7 +129,7 @@ $(document).ready(function(){
     for(var i = 0; i <= bubblecount; i++) {
         var sizeBlue = ((Math.random()*40 + 40)/2);
         var sizeGreen = ((Math.random()*40 + 40)/2);
-        $(".section-1").append('<span class="particle-blue" style="top:' + (Math.random()*60 + 20) + '%; left:' + (Math.random()*60 + 20) + '%;width:' + sizeBlue + 'px; height:' + sizeBlue + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
-        $(".section-1").append('<span class="particle-green" style="top:' + (Math.random()*60 + 20) + '%; left:' + (Math.random()*60 + 20) + '%;width:' + sizeGreen + 'px; height:' + sizeGreen + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        $(".section-1").append('<span class="particle-blue" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*60 + 20) + '%;width:' + sizeBlue + 'px; height:' + sizeBlue + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        $(".section-1").append('<span class="particle-green" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*60 + 20) + '%;width:' + sizeGreen + 'px; height:' + sizeGreen + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
     }
 });
