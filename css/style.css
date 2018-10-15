@@ -1138,7 +1138,7 @@ header {
     align-items: center;
     color: rgb(34, 177, 76);
     margin-top: .8vw;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .number-block {
@@ -1414,7 +1414,7 @@ hr {
     margin-top: 4vw;
     display: flex;
     flex-direction: column;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 4vw;
     margin-right: 13vw;
@@ -1436,14 +1436,14 @@ hr {
 }
 
 .label span {
-    font-size: 18px;
+    font-size: 19px;
     color: #808080;
     font-weight: normal;
 
 }
 
 .form {
-    height: 1.5vw;
+    height: 1.8vw;
     display: flex;
     align-items: center;
     border-radius: 5px;
