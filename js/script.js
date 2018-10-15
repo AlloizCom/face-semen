@@ -90,22 +90,18 @@ $(document).ready(function(){
         // animateIn: 'slideInUp',
         // transitionStyle : "fade"
         slidesToShow: 3,
-        arrows: true,
+        arrows: false,
         slidesToScroll: 1,
-        arrows: true,
+        autoplay: true,
         vertical: true,
         verticalSwiping: true,
         infinite: true,
     });
 
-    $('#clicks').click(function(){
-        var btn = $(this);
-        btn.prop('disabled',true);
-        window.setTimeout(function(){
-            btn.prop('disabled',false);
-        },2000);
-    });
-    //
+    setInterval(function(){
+        $(".slickPrev").slick("slickPrev");
+
+    }, 2000);
     // window.setInterval(function(){$('button').trigger('click');}, 1000);
 
     
