@@ -317,14 +317,18 @@ header {
 }
 
 .bubble {
+    user-select: none;
     display: none;
     position: absolute;
-    text-align: center;
-    color: #505050;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Open Sans";
     font-weight: bold;
+    font-size: 18px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -2px -2px;

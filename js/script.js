@@ -33,7 +33,7 @@ $(document).ready(function(){
         var newPosX, newPosY;
         $('.bubble').each(function(index){
             if ($(this).css("display") == "none") {
-                $(this).show();
+                $(this).css("display", "flex");
             }
             newPosX = positionX[index] + speedX;
             if (newPosX > maxXPosition * 0.95) {
