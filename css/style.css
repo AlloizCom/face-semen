@@ -1179,6 +1179,12 @@ header {
     margin: 0;
 }
 
+.number-block2 h1 {
+    font-size: 2vw;
+    color: rgb(109, 109, 109);
+    margin-left: 8vw;
+}
+
 .content_block ul li {
     border-radius: 100% 100% 100% 100%;
     padding-right: 4px;
@@ -1196,6 +1202,7 @@ header {
 
 .content_block2 ul {
     padding-left:0;
+    margin-left: 8vw;
     list-style: none;
 }
 
@@ -1250,6 +1257,7 @@ header {
 
 .content_block2 p {
     color: rgb(83, 83, 83);
+    margin-left: 8vw;
 }
 
 .content_block:nth-child(2) {
@@ -1449,8 +1457,8 @@ hr {
 .label img {
     padding-top: 0.5vw;
     padding-left: .5vw;
-    width: 10.8vw;
-    height: 2.55vw;
+    width: 11vw;
+    height: 2.9vw;
 }
 
 .label span {
