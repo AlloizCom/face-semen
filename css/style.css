@@ -1155,7 +1155,7 @@ header {
 
 .main_block p {
     color: rgb(83, 83, 83);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .section-4 li {
@@ -1351,6 +1351,7 @@ hr {
     color: rgb(0, 162, 232);
     font-style: normal;
     font-size: 2vw;
+    font-weight: bold;
 }
 
 .circle {
