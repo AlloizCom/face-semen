@@ -126,12 +126,15 @@ header {
     display: inline-flex;
     background-color: rgb(42, 118, 122);
     color: #ffffff;
+    border: 1px solid #ffffff;
     font-weight: bold;
     font-size: 11px;
-    width: 20px;
-    height: 20px;
+    flex-direction: column-reverse;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
