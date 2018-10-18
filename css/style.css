@@ -263,10 +263,6 @@ header {
 }
 
 @media screen and (min-width: 1400px) {
-    .slider {
-        margin-left: 300px;
-    }
-
     .section-1 {
         height: 720px;
         background-position-y: bottom;
@@ -274,10 +270,6 @@ header {
 }
 
 @media screen and (max-width: 1400px) {
-    .slider {
-        margin-left: 40px;
-    }
-
     .section-1 {
         background-position-y: bottom;
         height: 45vw;
@@ -485,6 +477,7 @@ header {
 .slider {
     display: flex;
     width: 570px;
+    margin-left: 40px;
     height: 330px;
     align-items: center;
 }
