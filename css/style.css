@@ -1458,7 +1458,7 @@ hr {
     margin-top: 4vw;
     display: flex;
     flex-direction: column;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 4vw;
     margin-right: 13vw;
@@ -1473,14 +1473,14 @@ hr {
 }
 
 .label img {
-    padding-top: 0.5vw;
+    padding-top: 0.3vw;
     padding-left: .5vw;
-    width: 192px;
-    height: 38px;
+    width: 155px;
+    height: 35px;
 }
 
 .label span {
-    font-size: 21px;
+    font-size: 19px;
     color: #808080;
     font-weight: normal;
 
