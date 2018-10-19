@@ -1084,7 +1084,7 @@ header {
 
 .first_block {
     display: flex;
-    margin-top: 14vw;
+    margin-top: 12vw;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -1342,7 +1342,7 @@ video {
     padding-bottom: .7vw;
     padding-left: 3.3vw;
     margin-left: -2vw;
-    box-shadow: 1px 1px 10px 1px rgba(50, 50, 50, 0.2);
+    box-shadow: 1px 1px 7px 1px rgba(50, 50, 50, 0.2);
     width: 28vw !important;
     text-align: center;
     color: rgb(83, 83, 83);
@@ -1360,8 +1360,8 @@ video {
     height: 6.5vw !important;
     z-index: 2;
     border-radius: 100% 100% 100% 100%;
-    box-shadow: -2px 0px 11px 0px rgba(50, 50, 50, 0.2);
     margin-top: 4px;
+    box-shadow: -2px 0px 5px 0px rgba(50, 50, 50, 0.2);
     object-fit: cover;
     margin-bottom: 4px;
     margin-left: 4px;

@@ -96,6 +96,7 @@ $(document).ready(function(){
         vertical: true,
         verticalSwiping: true,
         infinite: true,
+        adaptiveHeight: true
     });
 
     setInterval(function(){
