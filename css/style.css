@@ -1476,8 +1476,8 @@ hr {
 .label img {
     padding-top: 0.5vw;
     padding-left: .5vw;
-    width: 12vw;
-    height: 2.7vw;
+    width: 192px;
+    height: 38px;
 }
 
 .label span {
