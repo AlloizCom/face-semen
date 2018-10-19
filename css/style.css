@@ -1325,7 +1325,7 @@ video {
 }
 
 .info {
-
+    margin-top: 1vw;
     outline: none;
     cursor: pointer;
     display: flex !important;
