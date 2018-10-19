@@ -1084,7 +1084,7 @@ header {
 
 .first_block {
     display: flex;
-    margin-top: 10vw;
+    margin-top: 14vw;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -1092,7 +1092,7 @@ header {
 
 .second_block {
     display: flex;
-    margin-top: 10vw;
+    margin-top: 5vw;
     justify-content: center;
     align-items: center;
     width: 100vw;
