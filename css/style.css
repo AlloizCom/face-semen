@@ -59,7 +59,7 @@ header {
     padding: 12px 20px;
 }
 
-.menu li:nth-child(5), .menu li:nth-child(6), .menu li:nth-child(8) {
+.menu li:nth-child(5), .menu li:nth-child(6), .menu li:nth-child(8){
     padding: 12px 15px;
 }
 
@@ -116,13 +116,15 @@ header {
 }
 
 .bag-icon {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
+    background-position-x: center;
     background-image: url("../img/bag.png");
 }
 
 .number-of-items-in-bag {
     position: relative;
     bottom: -10px;
+    right: -10px;
     display: inline-flex;
     background-color: rgb(42, 118, 122);
     color: #ffffff;
@@ -139,7 +141,7 @@ header {
 }
 
 .heart-icon {
-    padding: 20px 42px;
+    padding: 10px 42px;
     background-image: url("../img/heart.png");
 }
 
@@ -293,7 +295,7 @@ header {
     font-family: 'Open Sans';
     color: #000000;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 43px;
     top: 26.5vw;
     z-index: 3;
 }
@@ -810,7 +812,8 @@ header {
     justify-content: center;
     margin-left: -40px;
     z-index: 1;
-    animation: 15s elements-animation infinite;
+    -webkit-animation: 15s elements-animation infinite;
+    -moz-animation: none;
     background-clip: padding-box;
 }
 

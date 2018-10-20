@@ -134,11 +134,11 @@ $(document).ready(function(){
         $(this).append('<span class="particle-rr" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 + 100) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
         }
     });
-    var bubblecount = ($(".section-1").width()/100)/2;
+    var bubblecount = ($(".section-1").width()/100);
     for(var i = 0; i <= bubblecount; i++) {
         var sizeBlue = ((Math.random()*40 + 40)/2);
         var sizeGreen = ((Math.random()*40 + 40)/2);
-        $(".section-1").append('<span class="particle-blue" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*60 + 20) + '%;width:' + sizeBlue + 'px; height:' + sizeBlue + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
-        $(".section-1").append('<span class="particle-green" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*60 + 20) + '%;width:' + sizeGreen + 'px; height:' + sizeGreen + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        $(".section-1").append('<span class="particle-blue" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*100) + '%;width:' + sizeBlue + 'px; height:' + sizeBlue + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        $(".section-1").append('<span class="particle-green" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*100) + '%;width:' + sizeGreen + 'px; height:' + sizeGreen + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
     }
 });
