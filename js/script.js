@@ -134,7 +134,7 @@ $(document).ready(function(){
         $(this).append('<span class="particle-rr" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 + 100) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
         }
     });
-    var bubblecount = ($(".section-1").width()/100);
+    var bubblecount = ($(".section-1").width()/100)/1.3;
     for(var i = 0; i <= bubblecount; i++) {
         var sizeBlue = ((Math.random()*40 + 40)/2);
         var sizeGreen = ((Math.random()*40 + 40)/2);
