@@ -33,7 +33,7 @@ $(document).ready(function(){
         var newPosX, newPosY;
         $('.bubble').each(function(index){
             if ($(this).css("display") == "none") {
-                $(this).show();
+                $(this).css("display", "flex");
             }
             newPosX = positionX[index] + speedX;
             if (newPosX > maxXPosition * 0.95) {
@@ -78,15 +78,33 @@ $(document).ready(function(){
             $(this).children(".playpause").fadeIn();
         }
     });
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        dots: true,
-        items: 1,
+    $(".slickPrev").slick( {
+        // loop: true,
+        // dots: true,
+        // items: 3,
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        // autoplayHoverPause: true,
+        // autoplayHoverPause: true,
+        // animateOut: 'slideOutUp',
+        // animateIn: 'slideInUp',
+        // transitionStyle : "fade"
+        slidesToShow: 3,
+        arrows: false,
+        slidesToScroll: 1,
         autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        animateIn: 'flipInX'
+        vertical: true,
+        verticalSwiping: true,
+        infinite: true,
+        adaptiveHeight: true
     });
+
+    setInterval(function(){
+        $(".slickPrev").slick("slickPrev");
+
+    }, 2000);
+    // window.setInterval(function(){$('button').trigger('click');}, 1000);
+
     
     $.each($(".bubbles-right"), function(){
        var bubblecount = ($(this).width()/100)*5;
@@ -103,18 +121,24 @@ $(document).ready(function(){
        }
     });
     $.each($(".board-bubbles-right"), function(){
-        // var bubblecount = ($(this).width()/100)/2;
         var bubblecount = 5;
         for(var i = 0; i <= bubblecount; i++) {
            var size = ((Math.random()*40 + 40)/2);
            $(this).append('<span class="particle-ll" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 - 40) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
         }
      });
-     $.each($(".board-bubbles-left"), function(){
-         var bubblecount = ($(this).width()/100)/2;
-         for(var i = 0; i <= bubblecount; i++) {
-            var size = ((Math.random()*40 + 40)/2);
-            $(this).append('<span class="particle-rr" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 + 100) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
-         }
-      });
+    $.each($(".board-bubbles-left"), function(){
+        var bubblecount = ($(this).width()/100)/2;
+        for(var i = 0; i <= bubblecount; i++) {
+        var size = ((Math.random()*40 + 40)/2);
+        $(this).append('<span class="particle-rr" style="top:' + (Math.random()*30 + 70) + '%; left:' + (Math.random()*30 + 100) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        }
+    });
+    var bubblecount = ($(".section-1").width()/100)/1.3;
+    for(var i = 0; i <= bubblecount; i++) {
+        var sizeBlue = ((Math.random()*40 + 40)/2);
+        var sizeGreen = ((Math.random()*40 + 40)/2);
+        $(".section-1").append('<span class="particle-blue" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*100) + '%;width:' + sizeBlue + 'px; height:' + sizeBlue + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+        $(".section-1").append('<span class="particle-green" style="top:' + (Math.random()*40 + 6) + 'vw; left:' + (Math.random()*100) + '%;width:' + sizeGreen + 'px; height:' + sizeGreen + 'px;animation-delay: ' + ((Math.random()*30)/10) + 's;"></span>');
+    }
 });
