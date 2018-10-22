@@ -2,7 +2,7 @@
     .mobile {
         display: none;
     }
-    
+
     @font-face {
         font-family: Open Sans;
         src: url('../css/fonts/Open Sans.ttf');
@@ -1741,7 +1741,7 @@
         outline: none;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .desktop {
         display: none;
     }
