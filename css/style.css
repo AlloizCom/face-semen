@@ -888,30 +888,45 @@
     }
 
     .elements {
-        position: absolute;
+        position: fixed;
         height: 320px;
         width: 320px;
         display: flex;
-        transform: translate(60px, -70px);
+        transform: translate(0px, -70px);
         border-radius: 50%;
-        background-color: #e9fef0ea;
+        background-color: #e9fef0;
         align-items: center;
         justify-content: center;
-        left: 40px;
+        /* animation: 15s elements-animation infinite; */
         bottom: -20px;
         z-index: 1;
     }
-
     .elements-border {
         position: absolute;
         height: 320px;
         width: 320px;
+        transform: translate(50px, -70px);
         left: 40px;
-        transform: translate(40px, -70px);
+        animation: 1.5s anim infinite ease-in;
+        background-color: #ffffff;
         border-radius: 50%;
         bottom: -20px;
         z-index: 1;
-        animation: 15s elements-animation infinite;
+    }
+
+    @keyframes anim {
+        0% {
+            opacity: 0;
+            transform: translate(50px, -70px) scale(1);
+        }
+        50% {
+            opacity: 0.5;
+            transform: translate(50px, -70px) scale(1.1);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(50px, -70px) scale(1.1);
+        }
     }
 
     .circle-element-1 {
@@ -946,123 +961,95 @@
         10% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         10.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         11% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         20% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         20.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         21% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         30% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         30.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         31% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         40% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         40.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         41% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         50% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         50.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         51% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         60% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         60.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         61% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         70% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         70.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         71% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         80% {
             opacity: 1;
             border: 30px solid rgba(255, 255, 255, 0.0);
-            transform: translate(40px, -40px);
         }
         80.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         81% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         90% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
             opacity: 1;
         }
         90.5% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
         }
         91% {
             border: 0px solid rgba(255, 255, 255, 1);
-            transform: translate(40px, -70px);
         }
         100% {
             border: 0px solid rgba(255, 255, 255, 0);
-            transform: translate(40px, -70px);
             opacity: 0;
         }
     }
