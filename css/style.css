@@ -1745,4 +1745,32 @@
     .desktop {
         display: none;
     }
+
+    header {
+        padding: 8px 12px 8px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        right: 0;
+        -webkit-box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.32);
+        -moz-box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.32);
+        box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.32);
+        background-color: #ffffff;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 165px;
+        height: 35px;
+        background-image: url("../img/logo.png");
+        background-size: contain;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+
+    .menu-btn {
+        padding-left: 300px;
+    }
 }
