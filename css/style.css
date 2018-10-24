@@ -1272,7 +1272,7 @@
 
     .main_block p {
         color: rgb(83, 83, 83);
-        font-size: 15px;
+        font-size: 1.1vw;
     }
 
     .section-4 li {
@@ -1282,7 +1282,7 @@
         align-items: center;
         color: rgb(34, 177, 76);
         margin-top: .8vw;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .number-block {
@@ -1291,8 +1291,8 @@
     }
 
     .number-block h1 {
-        font-size: 2vw;
-        color: rgb(109, 109, 109);
+        font-size: 27px;
+        color: rgb(0, 0, 0);
         margin: 0;
     }
 
@@ -1328,7 +1328,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 22vw;
+        width: 25vw;
         height: auto;
         background: #ffffff;
         /* padding: 7px; */
@@ -1347,7 +1347,7 @@
     }
 
     .section_content img {
-        width: 22vw;
+        width: 25vw;
         box-shadow: 0px 3px 9px;
     }
 
@@ -1357,7 +1357,7 @@
     }
 
     .content_block p {
-        font-size: 22px;
+        font-size: 20px;
         color: rgb(83, 83, 83);
     }
 
@@ -1397,25 +1397,27 @@
     }
 
     .videocontainer {
-        width: 50vw;
+        width: 40vw;
+        height: 40vw;
         display: flex;
         justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 5px 17px #adddf3;
+        overflow: hidden;
     }
 
-    video {
+    .videos {
         padding-top: 20px;
         padding-bottom: 20px;
-        object-fit: cover;
-        width: 34vw;
-        height: 33vw;
-        border-radius: 100% 100% 100% 100%;
-        box-shadow: 0px 1px 5px 17px #adddf3;
+        /*width: 34vw;*/
+        height: 100%;
         object-fit: cover;
         padding-bottom: 0vw;
         padding-top: 0vw;
         padding-left: 0vw;
         padding-right: 0vw;
         margin-right: 5vw;
+        font-family: 'object-fit: cover; object-position: left top;';
     }
 
     .single-item button {
@@ -1539,7 +1541,7 @@
 
     .contact-us {
         background-color: #f1fff1;
-        height: 15vw;
+        height: 16vw;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -1701,7 +1703,7 @@
     .first-right-block{
         background: url('../img/ts.png');
         background-size: cover;
-        width: 22vw;
+        width: 25vw;
         height: 18vw;
         display: flex;
         justify-content: center;
@@ -1711,7 +1713,7 @@
     .two-right-block{
         background: url('../img/sec1png2.png');
         background-size: cover;
-        width: 22vw;
+        width: 25vw;
         height: 18vw;
         display: flex;
         justify-content: center;
@@ -1720,7 +1722,7 @@
     .three-right-block{
         background: url('../img/t.png');
         background-size: cover;
-        width: 22vw;
+        width: 25vw;
         height: 18vw;
         display: flex;
         justify-content: center;

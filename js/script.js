@@ -99,6 +99,8 @@ $(document).ready(function(){
         adaptiveHeight: true
     });
 
+    objectFitVideos(document.querySelectorAll('.videos'));
+
     setInterval(function(){
         $(".slickPrev").slick("slickPrev");
 
