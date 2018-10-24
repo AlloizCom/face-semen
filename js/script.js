@@ -13,8 +13,10 @@ $(document).ready(function(){
             $(".dropdown-content").fadeOut();
         }
     }
-    $(".section-1-text").cycle("fade");
-    const refreshRate = 1000 / 30;
+    $(".section-1-text").cycle({
+        timeout: 1
+    });
+    const refreshRate = 1000 / 60;
     var maxXPosition = $(".section-2").width()*1.3;
     var positionX = [];
     var positionY = [];
